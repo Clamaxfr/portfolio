@@ -294,7 +294,11 @@ footer{
     background-color: #0077b5;
 }
 
-.box, .box2, .box3{
+.box4{
+    background-color: #7289da;
+}
+
+.box, .box2, .box3, .box4{
     padding: 1em;
     font-size: 2em;
     flex-basis: 50%;
@@ -306,13 +310,13 @@ footer{
     text-decoration: none;
 }
 
-.box:hover, .box2:hover, .box3:hover{
+.box:hover, .box2:hover, .box3:hover, .box4:hover{
     filter: brightness(0.90);
 }
 
 .adress{
     font-size: 2em;
-    background-color: #828DCE;
+    background-color: #67729D;
     text-align: center;
     align-items: center;
     color: white;
@@ -337,7 +341,7 @@ footer{
     animation: contact 1s;
 }
 
-.git-x>a>.box>i, .box2>i, .box3>i{
+.git-x>a>.box>i, .box2>i, .box3>i, .box4>i{
     padding-left: 10px;
 }
 
@@ -524,7 +528,7 @@ footer{
     .padding{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 
     .box{
@@ -536,6 +540,10 @@ footer{
 
     .box3{
         grid-area: 3 / 1 / 4 / 6;
+    }
+
+    .box4{
+        grid-area: 4 / 1 / 4 / 6;
     }
 }
 
@@ -584,11 +592,11 @@ footer{
 
 @media screen and (max-width: 475px){
 
-    .box i, .box2 i,.box3 i{
+    .box i, .box2 i, .box3 i, .box4 i{
         padding-left: 0;
     }
 
-    .box, .box2, .box3, .email p span, .email p i{
+    .box, .box2, .box3, .box4, .email p span, .email p i{
         font-size: 1.5rem;
     }
     .header{
@@ -609,11 +617,11 @@ footer{
 @media screen and (max-width: 351px){
 
 
-    .box i, .box2 i, .box3 i{
+    .box i, .box2 i, .box3 i, .box4{
         padding-left: 0;
     }
 
-    .box, .box2, .box3, .email p span, .email p i{
+    .box, .box2, .box3, .box4, .email p span, .email p i{
         font-size: 1.2rem;
     }
     .header{
